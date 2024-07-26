@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/futura-font@1.0.0/styles.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;800&family=Roboto:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>What Are The Scrambled Words?</title>
+    <style>
+      body {
+        font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+        background-color: thistle;
+        background-size: cover;
+        text-align: center;
+        margin: 4px;
+        overflow: auto;
+      }
+      .container {
+        display: list-item;
+        list-style-type: disc;
+        list-style-position: inside;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 4px;
+        height: 60%;
+        width: 50%;
+      }
+      .text-box {
+        background-color: rgb(252, 145, 252);
+        color: rgb(14, 12, 13);
+        font-size: 15px;
+        font-weight: bold;
+        padding: 5px;
+        text-align: center;
+        text-shadow: 1px 1px 2px pink;
+        width: 80%;
+        height: 80%;
+        margin: 12px;
+        border-spacing: 5px;
+        border-radius: 15px;
+        border-style: groove;
+      }
+      .rcorners {
+        border-radius: 25px;
+        border: 2px white;
+        padding: 17px;
+        width: 98%;
+        height: 50%;
+        border-style: groove;
+        margin-top: 6%;
+      }
+      .input-box {
+        width: 100%;
+        padding: 5px;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        color: black;
+        margin: 12px;
+        border-spacing: 5px;
+        border-style: groove;
+      }
+      .button {
+        background-color: plum;
+        color: black;
+        border-color: blueviolet;
+        border-radius: 20px;
+        border-style: groove;
+        padding: 10px 20px;
+        font-size: 15px;
+        font-weight: bold;
+        margin-top: 10px;
+      }
+      .button-ok {
+        margin-top: 20px;
+      }
+      .answer {
+        color: blueviolet;
+        margin: 5px;
+        size: 20px;
+        font-size: 15px;
+        font-weight: bold;
+        text-align: center;
+      }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <h1>UnScramble</h1>
+    <div class="rcorners">
+      <ul style="position: relative">
+        <li class="text-box" id="shuff1"></li>
+        <li class="text-box" id="shuff2"></li>
+        <li class="text-box" id="shuff3"></li>
+        <!---<div style="background-color: yellow; width: 10px;"></div>--->
+      </ul>
+      <ul style="position: relative">
+        <input type="text" class="input-box" id="one" />
+        <input type="text" class="input-box" id="two" />
+        <input type="text" class="input-box" id="three" />
+      </ul>
+    </div>
+    <div style="border-spacing: 5px">
+      <!--<div style="background-color: yellow; width: 10px;"></div>-->
+      <!---<input type="text" class="input-box" id="one">
+        <input type="text" class="input-box" id="two">
+        <input type="text" class="input-box" id="three">--->
+    </div>
+    <button
+      class="button"
+      id="get"
+      onclick="scramble(), scrambleTwo(), scrambleThree()"
+    >
+      Get
+    </button>
+    <form action="/unscramble" method="GET">
+      <button type="submit" class="button">Refresh Words</button>
+    </form>
+    <!--<button class="button" id="new" onclick=>New Wordset</button>--->
+    <button class="button button-ok" id="ok">OK</button>
+    <ul class="text-centered" style="size: 20px; margin-top: 10px">
+      <il class="answer rounded-pill" id="answer1"></il>
+      <il class="answer rounded-pill" id="answer2"></il>
+      <il class="answer rounded-pill" id="answer3"></il>
+    </ul>
+
+    <script>
+      function scramble() {
+        var firstShuffle = document.getElementById("shuff1");
+        firstShuffle.innerHTML = "{{ scrambled_words[0] }}";
+        {
+        }
+      }
+    </script>
+    <script>
+      function scrambleTwo() {
+        var secondShuffle = document.getElementById("shuff2");
+        secondShuffle.innerHTML = "{{ scrambled_words[1] }}";
+        {
+        }
+      }
+    </script>
+    <script>
+      function scrambleThree() {
+        var thirdShuffle = document.getElementById("shuff3");
+        thirdShuffle.innerHTML = "{{ scrambled_words[2] }}";
+        {
+        }
+      }
+    </script>
+
+    <script>
+      document.getElementById("ok").addEventListener("click", function () {
+        document.getElementById("answer1").innerHTML = "{{ given_words[0] }}";
+        document.getElementById("answer2").innerHTML = "{{ given_words[1] }}";
+        document.getElementById("answer3").innerHTML = "{{ given_words[2] }}";
+      });
+    </script>
+  </body>
+</html>
