@@ -1,6 +1,6 @@
 # 🌀 Word-Scrambler-PY 
 
-![Word Scrambler Banner](https://via.placeholder.com/1000x400.png?text=Word+Scrambler+Banner)
+![Word Scrambler Banner](https://github.com/N1TSUA-TATHAM-crzywrld/Word-Scrambler-PY/blob/main/static/banner.txt)
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
