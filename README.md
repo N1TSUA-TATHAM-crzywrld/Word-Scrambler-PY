@@ -1,5 +1,7 @@
 # 🌀 Word-Scrambler-PY 
 
+<div align="center">
+
 <pre>
 *******************************************************************************************
 *                                                                                         *
@@ -20,6 +22,7 @@
 *                                                                                         *
 *******************************************************************************************
 </pre>
+</div>
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
