@@ -1,6 +1,6 @@
-# 🌀 Word-Scrambler-PY 
-
 <div align="center">
+
+  # 🌀 Word-Scrambler-PY 
 
 <pre>
 *******************************************************************************************
@@ -22,13 +22,13 @@
 *                                                                                         *
 *******************************************************************************************
 </pre>
-</div>
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 ![Contributions](https://img.shields.io/badge/Contributions-Welcome-brightgreen?style=for-the-badge)
 ![Awesome](https://img.shields.io/badge/Awesome-100%25-purple?style=for-the-badge)
 
+</div>
 ---
 
 ## 📌 Overview
