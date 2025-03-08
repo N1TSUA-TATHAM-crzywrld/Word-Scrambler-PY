@@ -65,10 +65,11 @@ pip install -r requirements.txt
 ---
 
 📦 Word-Scrambler-PY/
+'''
 ├── 📂 app.py          # Flask web application
 ├── 🎨 gui.py          # PySimpleGUI interface
 ├── 🔠 scramble.py     # Core scrambling logic
 ├── 📜 requirements.txt # Dependencies
 ├── 📖 README.md       # Documentation
 └── 🧪 tests/          # Unit tests
-
+'''
